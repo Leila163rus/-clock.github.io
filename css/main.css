@@ -11,6 +11,8 @@ p {
     padding: 0;
 }
 #clock {
+    max-width: 100%;
+    display: block;
     height: 200px;
     width: 550px;
     font-family: 'Share Tech Mono', monospace;
