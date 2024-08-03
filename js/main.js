@@ -19,3 +19,12 @@ function currentTime () {
 }
 currentTime();
 
+function setZoom() {
+  if (window.matchMedia('(min-width: 360px) and (max-width: 1280px)').matches) {
+  document.body.style.zoom = "45%";
+  } else {
+  document.body.style.zoom = "100%";
+  }
+}
+setZoom();
+window.addEventListener('resize', setZoom);
